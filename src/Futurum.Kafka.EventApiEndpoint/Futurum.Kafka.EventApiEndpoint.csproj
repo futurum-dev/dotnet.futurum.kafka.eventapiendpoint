@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Futurum.ApiEndpoint" Version="1.0.0" />
+        <PackageReference Include="Futurum.Core" Version="1.0.2" />
+        <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+        <PackageReference Include="Serilog" Version="2.10.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\dotnet.futurum.eventapiendpoint\src\Futurum.EventApiEndpoint\Futurum.EventApiEndpoint.csproj" />
+    </ItemGroup>
+
+</Project>
